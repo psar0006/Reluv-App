@@ -3,4 +3,4 @@ streamlit
 pickle
 numpy
 pandas
-PIL import Image
+PIL
