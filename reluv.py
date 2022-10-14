@@ -18,7 +18,7 @@ def payout_percentage(x):
     return 60  
 
 
-database = pd.read_csv('/content/sample_data.csv')
+database = pd.read_csv('sample_data.csv')
 model = load_model('Retrain_Model_Pipeline')
 d = {'Reluv Listed Price': ['$0.00-$20.00', '$20.01-$50.00', '$50.01-$80.00', '$80.01-$100', '$100+'], 'Payout': ['5-20%', '21-30%', '31-40%', '41-50%', '60%']}
 table = pd.DataFrame(data=d)
@@ -27,7 +27,7 @@ def predict(model, input_df):
     predictions_df = predict_model(estimator=model, data=input_df)
     predictions = predictions_df['Label'][0]
     return predictions
-image = Image.open('/content/Reluv-logo1-resized.png')
+image = Image.open('Reluv-logo1-resized.png')
 url = "https://reluv.com.au/learn-more/brands-we-do-not-accept/"
 
 st.image(image, use_column_width =False)
