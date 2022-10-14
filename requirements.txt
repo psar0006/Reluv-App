@@ -1,6 +1,5 @@
 pycaret
 streamlit
-pickle
 numpy
 pandas
 PIL
