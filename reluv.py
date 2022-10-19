@@ -58,7 +58,7 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
-st.sidebar.image(image, use_column_width =True)
+st.sidebar.image(image, use_column_width =False)
 st.sidebar.markdown("[About Us](%s)" % about_url)
 st.sidebar.markdown("[Sustainability](%s)" % sustainability_url)
 st.sidebar.markdown("[Social Impact](%s)" % social_url)
