@@ -47,6 +47,18 @@ st.image(image, use_column_width =False)
 st.header("Reluv Payout Estimator: ")
 st.markdown("Type in or select from dropdowns and click the estimate button")
 st.markdown("Note: There are a number of brands we cannot resell. Please check out the list of brands we currently do not accept [here](%s)" % url)
+st.markdown(
+    """
+<style>
+.sidebar .sidebar-content {
+    background-image: linear-gradient(#FFC0CB,#FFC0CB);
+    color: white;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+st.sidebar.image(image, use_column_width =True)
 st.sidebar.markdown("[About Us](%s)" % about_url)
 st.sidebar.markdown("[Sustainability](%s)" % sustainability_url)
 st.sidebar.markdown("[Social Impact](%s)" % social_url)
@@ -54,7 +66,7 @@ st.sidebar.markdown("[FAQ](%s)" % faq_url)
 st.sidebar.markdown("[Return Policy](%s)" % return_policy_url)
 st.sidebar.markdown("[Private Policy](%s)" % private_policy_url)
 st.sidebar.markdown("[Blog](%s)" % blog_url)
-st.sidebar.markdown("[ZIP Pay](%s)" % zip_url)
+st.sidebar.markdown("[ZIP- Own Pay It Now Pay Later](%s)" % zip_url)
 st.sidebar.markdown("[Contact Us](%s)" % contact_url)
 #Now we will take user input one by one as per our dataframe
 #Brand
