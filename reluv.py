@@ -5,6 +5,9 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 
+im = Image.open('Reluv_icon.png')
+st.set_page_config(page_title="Reluv Price Estimator, page_icon=None, layout="centered", initial_sidebar_state="auto", menu_items=None)
+
 def payout_percentage(x):
   if x <= 20:
     return x
