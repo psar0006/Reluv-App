@@ -6,7 +6,12 @@ import pandas as pd
 from PIL import Image
 
 im = Image.open('Reluv_icon.png')
-st.set_page_config(page_title="Reluv Price Estimator, page_icon=im, layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title="Reluv Price Estimator, page_icon=im, initial_sidebar_state="auto", menu_items={'About': 'https://reluv.com.au/elements/pages/about/',
+        'Sustainability': "https://reluv.com.au/sustainability/",
+        'Social Impact': "https://reluv.com.au/our-impact/",
+        'FAQ':'https://reluv.com.au/elements/pages/faq/',
+        'Return Policy':'https://reluv.com.au/return-policy/'          
+    })
 
 def payout_percentage(x):
   if x <= 20:
