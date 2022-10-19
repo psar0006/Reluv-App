@@ -27,7 +27,7 @@ def predict(model, input_df):
     predictions_df = predict_model(estimator=model, data=input_df)
     predictions = predictions_df['Label'][0]
     return predictions
-image = Image.open('Reluv-logo1-resized.png')
+image = Image.open('reluv-01.webp')
 url = "https://reluv.com.au/learn-more/brands-we-do-not-accept/"
 
 st.image(image, use_column_width =False)
